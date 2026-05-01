@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile & Course Portal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #222;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #388E3C;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        
+        }
+        nav a:hover {
+            background-color: #388E3C;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            min-height: 400px;
+        }
+        main h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        main p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #939593;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav li {
+                margin: 5px 0;
+            }
+            main {
+                padding: 10px;
+            }
+            main h1 {
+                font-size: 2em;
+            }
+            main p {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+            main h1 {
+                font-size: 1.8em;
+            }
+            main p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Profile & Course Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="grades.html">Grades Table</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to the Student Profile & Course Portal! This is your personal hub for managing your academic information. Navigate through the pages to view your profile, courses, grades, and more.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Student Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
