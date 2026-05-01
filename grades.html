@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grades - Student Portal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #222;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin: 0 0 20px 0;
+            background-color: #4CAF50;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #388E3C;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e0f7e0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #388E3C;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav li {
+                margin: 5px 0;
+            }
+            body {
+                padding: 10px;
+            }
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="grades.html">Grades Table</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>My Grades</h1>
+    </header>
+    <table>
+        <caption>Academic Year 2023 Grades</caption>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Grade</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Introduction to Computer Science</td>
+                <td>A</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>B+</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Database Management</td>
+                <td>A-</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Credits</td>
+                <td>10</td>
+            </tr>
+        </tfoot>
+    </table>
+    <footer>
+        <p>&copy; 2023 Student Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
